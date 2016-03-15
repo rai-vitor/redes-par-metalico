@@ -1,812 +1,541 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Elegance</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normal.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/animation.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
-  </script>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-</head>
-<body>
-  <div class="fix-header" id="home">
-    <div class="w-container">
-      <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"></div>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Cabeamento Metálico</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css">  
+    <!-- Elastic grid css file -->
+    <link rel="stylesheet" href="css/elastic_grid.css"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>    
+    <!-- Default Theme css file -->
+    <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body> 
+     <!-- BEGAIN PRELOADER -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
     </div>
-  </div>
-  <div class="fixed-header">
-    <div class="w-container container">
-      <div class="w-row">
+    <!-- END PRELOADER -->
 
-       <!--///////////////////////////////////////////////////////
-       // Logo section 
-       //////////////////////////////////////////////////////////-->
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+    <!-- END SCROLL TOP BUTTON -->
 
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+          <div class="container">
+          <div class="navbar-header">
+            <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-        <div class="w-col w-col-3 logo">
-          <a href="#"><img class="logo" src="images/logo.png" alt="Elegance"></a>
+            <!-- LOGO -->
+
+            <!-- TEXT BASED LOGO -->
+            <a class="navbar-brand" href="#">Redes<span>UFRN</span></a>
+            
+            <!-- IMG BASED LOGO  -->
+            <!--  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a> --> 
+            
+                   
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">Par trançado</a></li>
+              <li><a href="#service">Normas & Padrões</a></li> 
+              <li><a href="#pricing">Utilização</a></li> 
+              <li><a href="#blog">Custos</a></li>                           
+            </ul>           
+          </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->
+
+      <!-- BEGIN SLIDER AREA-->
+      <div class="slider_area">
+        <!-- BEGIN SLIDER-->          
+        <div id="slides">
+          <ul class="slides-container">
+
+            <!-- THE FIRST SLIDE-->
+            <li>
+              <!-- FIRST SLIDE OVERLAY -->
+              <div class="slider_overlay"></div> 
+              <!-- FIRST SLIDE MAIN IMAGE -->
+              <img src="http://utc-info.com.br/wp-content/uploads/2013/11/84d778369ec1f9207b2774ca1b2c1afc1.jpg" alt="img">
+              <!-- FIRST SLIDE CAPTION-->
+              <div class="slider_caption">
+                <h2>Cabeamento metálico</h2>
+                <p>Cabos de par trançado...</p>             
+              </div>
+            </li>
+          </ul>
+          <!-- BEGAIN SLIDER NAVIGATION -->
+          <nav class="slides-navigation">
+            <!-- PREV IN THE SLIDE -->
+            <a class="prev" href="/item1">
+              <span class="icon-wrap"></span>
+              <h3><strong>Prev</strong></h3>
+            </a>
+            <!-- NEXT IN THE SLIDE -->
+            <a class="next" href="/item3">
+              <span class="icon-wrap"></span>
+              <h3><strong>Next</strong></h3>
+            </a>
+          </nav>       
         </div>
-
-        <!--///////////////////////////////////////////////////////
-       // End Logo section 
-       //////////////////////////////////////////////////////////-->
-
-        <div class="w-col w-col-9">
-
-       <!--///////////////////////////////////////////////////////
-       // Menu section 
-       //////////////////////////////////////////////////////////-->
+        <!-- END SLIDER-->          
+      </div>
+      <!-- END SLIDER AREA -->
+    </header>
+    <!--=========== End HEADER SECTION ================--> 
 
 
-          <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-            <div class="w-container nav">
-              <nav class="w-nav-menu nav-menu" role="navigation">
+    <!--=========== BEGIN ABOUT SECTION ================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="about_area">
+              <!-- START ABOUT HEADING -->
+              <div class="heading" align="justify">
+                <h2 class="wow fadeInLeftBig">Cabo de par trançado</h2>
+                <p>O cabeamento de par trançado é um dos meios de transmissão mais antigos, mais comuns e de menor custo. Consiste num cabeamento composto de 4 pares de fios de cobre, cada par sendo trançado entre si em forma helicoidal. Esse tipo de organização permite uma certa proteção a interferências eletromagnéticas, já que as ondas de diferentes partes dos fios se cancelam. Os dois fios de cada par enviam o mesmo sinal, porém com polaridades invertidas, com o propósito de melhorar a blindagem a interferências eletromagnéticas e aumentar o comprimento máximo do cabo.</p>
 
-                <a class="w-nav-link menu-li" href="#home">HOME</a>
-                <a class="w-nav-link menu-li" href="#about">ABOUT</a>
-                <a class="w-nav-link menu-li" href="#service">SERVICES</a>
-                <a class="w-nav-link menu-li" href="#portfolio">PORTFOLIO</a>
-                <a class="w-nav-link menu-li"href="#team">TEAM</a>
-                <a class="w-nav-link menu-li" href="#contact">CONTACT</a>
-              </nav>
-              <div class="w-nav-button">
-                <div class="w-icon-nav-menu"></div>
+                <p>Os pares são organizados com trançados diferentes para evitarem crosstalk, ou seja, a interferência entre os pacotes de dados de cada par, sendo a diferença dada pela quantidade de tranças por metro.</p>
+
+                <p>O sistema de cabeamento é otimizado quando o cabo é usado unido ao conector RJ-45 blindados, pois, como os cabos devem ser destrançados ao conectarem-se ao conector, essa proteção metálica protege o treco de cabo destrançado.</p>
+
+                <p>A aplicação mais comum do cabo de par trançado é o sistema telefônico. A maioria dos telefones está conectado à central telefônica por um cabo de par trançado. Quando muitos pares trançados precisam percorrer uma distância muito grande (por exemplo, de um prédio para a central de companhia telefônica), eles são envolvidos por uma capa protetora. Os cabos de telefonia são de categoria 3.</p>
+
+                <p>Em relação à pinagem, cada trecho de cabo utiliza em suas pontas um conector do tipo RJ-45. Possui 8 pinos, um para cada fio do cabo.</p>
+              </div>
+
+              <!-- START ABOUT CONTENT -->
+              <div class="about_content">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="about_featured">
+                      <div class="panel-group" id="accordion">
+                        <!-- START SINGLE FEATURED ITEAM #1-->
+                        <div class="panel panel-default wow fadeInLeft">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                 <span class="fa fa-check-square-o"></span>Unshilded twisted pair (UTP)
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                             par trançado sem blindagem
+                            </div>
+                          </div>
+                        </div>
+                        <!-- START SINGLE FEATURED ITEAM #2 -->
+                        <div class="panel panel-default wow fadeInLeft">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                 <span class="fa fa-check-square-o"></span>Shilded twitest pair (STP)
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            o par trançado blindado oferece uma proteção reforçada por uma blindagem externa constituída de material condutor e uma malha em cada par de fios, protegendo o cabo de interferências eletromagnéticas acentuadas e reduzindo o crosstalk. 
+                            </div>
+                          </div>
+                        </div>
+                        <!-- START SINGLE FEATURED ITEAM #3 -->
+                        <div class="panel panel-default wow fadeInLeft">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <span class="fa fa-check-square-o"></span>Screened twisted pair (ScTP)
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             Também conhecido como Foil Twisted Pair (FTP) é uma variação do STP menos blindada, possuindo apenas uma blindagem global ou de folha de aço ou de liga de alumínio, mas não evita crosstalk. 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="about_slider">
+                      <!-- BEGAIN FEATURED SLIDER -->
+                      <div class="featured_slider">
+                        <!-- SINGLE SLIDE IN THE SLIDER -->
+                        <div class="single_iteam">
+                          <a href="#"> <img src="img/STP.GIF" alt="img"></a>                          
+                        </div>
+                      </div>
+                      <!-- END FEATURED SLIDER -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Cabos metálicos para rede Ethernet</h3>
+              <ul>
+                <li>- Possuem categorias de 1 a 7.</li>
+                <li>- Os cabos de categoria 5 são os mais comuns e mais baratos, pois são suficientes para redes tanto de 100 quanto de 1000 megabits.</li>
+                <li>- São compostos por 4 pares de fio de cobre trançados entre si, o que cria uma barreira eletromagnética capaz de proteger as transmissões de interferências sem necessitar de blindagem, ao contrário dos cabos coaxiais.</li>
+              </ul><br>
+              <p>A performance de uma rede não pode ser expressa por taxa de transmissão em bits, mas por banda de frequência. Por isso, foram criadas as categorias, que definem a aplicação dos cabos e conectores. Quanto maior for a classificação, maior é a sua capacidade de transmitir dados.<br>
+              
+              Detalhes da categoria escrita no cabo:
+              <img src="img/cabo.jpg"><br>
+              <h4>Categorias 3, 5, 5e, 6 e 6a:</h4>
+                <ul>
+                  <li>- 3: É o cabo usado em instalações telefonicas, permite a sinalização de até 16MHz, assim tendo capacidade de sua rede Ethernet ser de 10 megabits (Mb) (padrão 10BASE-T) até 100 Mb (padrão 100BASE-T4), porém este último padrão é pouco utilizado por não ser suportado por todas as placas de redes. O diferencial dessa categoria em relação as lançadas anteriormente foi a criação de um padrão para o entrançamento dos pares, sendo de no mínimo 24 tranças por metro, assim sendo mais resistentes a ruídos externos, e cada par possui uma quantidade diferente de trança por metro de cabo.</li><br>
+
+                  <li>- 5: Suportam frequências de até 100MHz, tem capacidade de sua rede Ethernet ser de 100 Mb (padrão 100BASE-TX) até 1000 Mb (padrão 1000BASE-T), porém praticamente quase não são mais encontrados no mercado devido ao substituimento pelo sucessor 5e.</li><br>
+
+                  <li>- 5e: Essa categoria suporta frequências de no mínimo 100MHz, assim sendo encontrado no mercado cabos de até 155MHz, e possui outras características da categoria 5, como a capacidade de até 1000Mb e padrões de rede usados. Possui normas mais estritas () que reduzem a interferência entre os cabos e perda de sinal, melhorando a qualidade de cabos mais longos próximos a 100 metros.</li><br>
+
+                  <li>- 6:  Cabos cat 6 suportam frequências de até 250MHz, eles podem ser usados em rede 10G, porém nesse caso seu tamanho máximo de cabo reduz para 55 metros. Tem qualidade melhor que os cabos 5 e 5e por terem normas mais estritas</li><br>
+
+                  <li>- 6a: Suportam frequências de até 500MHz, e teve aumento de tamanho máximo de cabo para o uso em rede 10G para até 100 metros. Possuem um separador no meio do cabo entre os pares para diminuir o crosstalk, o que aumenta a espessura do cabo, deixando com tamanho entre 5.6 mm e 7.9 mm. São mais resistentes a perda de sinal e interferências que o cat 6. Imagem do separador do 6a: <img src="img/cabo2.jpg"></li><br>
+                </ul>
+
+              </p>    
+            </div>
+          </div>
+        </div>       
+      </div>
+    </section>
+    <!--=========== END ABOUT SECTION ================-->
+
+    <!--=========== BEGIN SERVICE SECTION ================-->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <!-- BEGAIN SERVICE HEADING -->
+            <div class="heading">
+              <h2 class="wow fadeInLeftBig">Normas, padrões & protocolos</h2>
+            </div>
+          </div>          
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <!-- BEGAIN SERVICE  -->
+            <div class="service_area">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <!-- BEGAIN SINGLE SERVICE -->
+                  <div class="single_service wow fadeInLeft">
+                    <div class="service_iconarea">
+                      <span class="fa fa-info service_icon"></span>
+                    </div>
+                    <h3 class="service_title">ANSI/TIA-968-A</h3>
+                    <p align="center">Define as dimensões e formato para o conector RJ45</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <!-- BEGAIN SINGLE SERVICE -->
+                  <div class="single_service wow fadeInRight">
+                    <div class="service_iconarea">
+                      <span class="fa fa-info service_icon"></span>
+                    </div>
+                    <h3 class="service_title">IEEE 802.3</h3>
+                    <p align="center">Define o padrão Ethernet</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <!-- BEGAIN SINGLE SERVICE -->
+                  <div class="single_service wow fadeInLeft">
+                    <div class="service_iconarea">
+                      <span class="fa fa-info service_icon"></span>
+                    </div>
+                    <h3 class="service_title">Define o padrão Ethernet</h3>
+                    <p align="center">O padrão mais usado em LAN’s<br>
+                      Os padrões atuais do protocolo Ethernet são os seguintes:<br><br>
+                        <i>10 megabits/seg: 10Base-T Ethernet (IEEE 802.3)<br>
+                        100 megabits/seg: Fast Ethernet (IEEE 802.3u)<br>
+                        1 gigabits/seg: Gigabit Ethernet (IEEE 802.3z)<br>
+                        10 gigabits/seg: 10 Gigabit Ethernet (IEEE 802.3ae)<br>
+                      </i>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <!-- BEGAIN SINGLE SERVICE -->
+                  <div class="single_service wow fadeInRight">
+                    <div class="service_iconarea">
+                      <span class="fa fa-info service_icon"></span>
+                    </div>
+                    <h3 class="service_title">EIA/TIA-568</h3>
+                    <p align="center">Define um sistema de codificação com quatro cores básicas, em combinação com o branco, para os condutores UTP de 100 Ohms, assim como a ordem dos pares no conector RJ-45. Quando a terminação do cabo segue padrão T568-A numa ponta e T568-B na outra é chamado de Cabo Crossover.
+                      <img src="img/RJ45wires.jpg" height="300px">
+                    </p>
+                  </div>
+                </div>               
               </div>
             </div>
           </div>
-
-
-          <!--///////////////////////////////////////////////////////
-       // End Menu section 
-       //////////////////////////////////////////////////////////-->
-
-
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!--///////////////////////////////////////////////////////
-       //  Slider section 
-       //////////////////////////////////////////////////////////-->
-
-
-  <div class="slidersection">
-    <div class="sp-slideshow">
-      
-        <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
-        <label for="button-1" class="button-label-1"></label>
-        
-        <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
-        <label for="button-2" class="button-label-2"></label>
-        
-        <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
-        <label for="button-3" class="button-label-3"></label>
-        
-        <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
-        <label for="button-4" class="button-label-4"></label>
-        
-        <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
-        <label for="button-5" class="button-label-5"></label>
-        
-        <label for="button-1" class="sp-arrow sp-a1"></label>
-        <label for="button-2" class="sp-arrow sp-a2"></label>
-        <label for="button-3" class="sp-arrow sp-a3"></label>
-        <label for="button-4" class="sp-arrow sp-a4"></label>
-        <label for="button-5" class="sp-arrow sp-a5"></label>
-        
-        <div class="sp-content">
-          <div class="sp-parallax-bg"></div>
-          <ul class="sp-slider clearfix">
-            <li><img src="images/slider/slider1.png" alt="image01" /></li>
-            <li><img src="images/slider/slider2.png" alt="image02" /></li>
-            <li><img src="images/slider/slider3.png" alt="image03" /></li>
-            <li><img src="images/slider/slider4.png" alt="image04" /></li>
-            <li><img src="images/slider/slider5.png" alt="image05" /></li>
-          </ul>
-        </div><!-- sp-content -->
-        
-      </div><!-- sp-slideshow -->
-  </div>
-
-
-<!--///////////////////////////////////////////////////////
-       // End slider section 
-       //////////////////////////////////////////////////////////-->
-
-
-
-<!--///////////////////////////////////////////////////////
-       // About section 
-       //////////////////////////////////////////////////////////-->
-
-
-  <div class="about-parlex" id="about">
-    <section class="parlex7-back">
-      <div class="w-container">
-        <div id="about-animation">
-        <div class="wrap">
-          <div class="about">
-            <h1 class="about-heading">ABOUT</h1>
-            <div class="about-text">WHO WE ARE ?</div>
-            <div class="sepreater"></div>
-          </div>
-          <p class="about-des">We are Elegance. We create stunning identities for our clients that people fall in love with.&nbsp;
-            <br>Whether it's an app icon, a logo for a hot startup, or just an illustration, we'll work hard until you can't help but say "WOW!". 
-          </p>
-          <img class="about-img" src="images/about.png"
-          alt="52de15aa5d3566c14300015e_about.png">
-        </div>
-      </div>
       </div>
     </section>
-  </div>
+    <!--=========== END SERVICE SECTION ================-->
+
+    <!--=========== BEGAIN PRICING SECTION ================-->
+    <section id="pricing">
+      <div class="container">
+        <div class="row col-lg-12 col-md-12">
+          <!-- START ABOUT HEADING -->
+          <div class="heading">
+            <h2 class="wow fadeInLeftBig">Exemplos de utilização</h2>
+          </div>
+        </div>
+        <div class="row col-lg-12 col-md-12">
+          <div class="pricing_area">
+            <div class="row">
+              <!-- BEGAIN BASIC PRICE TABLE -->
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="single_price  wow fadeInUp">
+                  <h3 class="price">Cabo cat 3</h3>
+                  <ul class="price_features">                
+                    <li><strong>Padrão:</strong> UTP</li>
+                    <li><strong>Largura de Banda:</strong> 16 MHz</li>
+                    <li><strong>Velocidade:</strong> Até 10 Mbps (10GBASE-T Ethernet)</li>
+                    <li><strong>Aplicação:</strong> É utilizado em sistemas telefônicos e em instalações do Protocolo de Voz sobre Internet (VoIP)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="single_price  wow fadeInUp">
+                  <h3 class="price">Cabo cat 5e</h3>
+                  <ul class="price_features">                  
+                    <li><strong>Padrão:</strong> UTP</li>
+                    <li><strong>Largura de Banda:</strong> 100 - 125 MHz</li>
+                    <li><strong>Velocidade:</strong> Até 1 Gbps (100BASE-TX e 10BASE-T Ethernet)</li>
+                    <li><strong>Aplicação:</strong> Utilizado nas redes LANs (redes domésticas)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="single_price  wow fadeInUp">
+                  <h3 class="price">Cabo cat 6</h3>
+                  <ul class="price_features">                  
+                    <li><strong>Padrão:</strong> UTP</li>
+                    <li><strong>Largura de Banda:</strong> 250 MHz</li>
+                    <li><strong>Velocidade:</strong> Acima de 1 Gbps (10GBASE-T Ethernet)</li>
+                    <li><strong>Aplicação:</strong>  Redes estruturadas com diversas tecnologias; empresas com médio  a alto tráfego de dados</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="single_price  wow fadeInUp">
+                  <h3 class="price">Cabo cat 6a</h3>
+                  <ul class="price_features">                
+                    <li><strong>Padrão:</strong> U/FTP , F/UTP</li>
+                    <li><strong>Largura de Banda:</strong> 500 MHz</li>
+                    <li><strong>Velocidade:</strong> 1 Gbps ou 10 Gbps em lances de até 55 metros</li>
+                    <li><strong>Aplicação:</strong> Pequenos data-centers, Call centers, empresas com grande fluxo na rede estruturada, empresas que visam crescer em médio e longo prazo sem investir na troca de cabeamento.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END PRICING SECTION ================-->
 
 
-<!--///////////////////////////////////////////////////////
-       // End about section 
-       //////////////////////////////////////////////////////////-->
+    <!--=========== BEGAIN BLOG SECTION ================-->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <!-- START BLOG HEADING -->
+            <div class="heading">
+              <h2 class="wow fadeInLeftBig">Custos de Instalação</h2>
+              <p>Os valores encontrados correspondem a média de preços dos produtos pesquisados nas lojas: Miranda Computação, Walmart, Estrela10, Extra, Casas Bahia, Ponto Frio, Americanas, DBestShop, Mania Virtual, Mega Mamute, IByte e Mercado Livre.</p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12">
+            <!-- BEGAIN BLOG CONTENT -->
+            <div class="blog_content">
 
+              <!-- BEGAIN BLOG SLIDER -->
+              <div class="blog_slider">
+                <!-- BEGAIN SINGLE BLOG -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="https://controlport.com.br/image/cache/data/cabos/2087-furukawa-cabo-rede-cat5e-2-600x600.jpg" alt="img">
+                    </div>
+                    <h3>Cabo CAT5E</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li>5m - R$ 11,64</li><li>10m - R$ 18,90<br>20m - R$ 35,50<br>305m - R$ 209,00</li></ol>                
+                  </div>
+                </div>
 
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="http://ecx.images-amazon.com/images/I/715uB6OMcUL._SL1500_.jpg" alt="img">
+                    </div>
+                    <h3>Cabo CAT6</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li>5m - R$ 15,70</li><li>10m - R$ 27,00<br>305m - R$ 353,00</li></ol>              
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="http://mlb-s1-p.mlstatic.com/pacote-100-conector-rj45-macho-cat5e-8p8c-plug-nota-fiscal-536011-MLB20467501479_102015-O.jpg" alt="img">
+                    </div>
+                    <h3>Conector RJ45 CAT5E Macho</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li>1UN - R$ 0,45</li><li>100UN - R$ 50,20<br>100UN - Blindado - R$ 67,10</li></ol>             
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="http://images4.tcdn.com.br/img/img_prod/376041/_112_1_20140328102127.jpg" alt="img">
+                    </div>
+                    <h3>Conector RJ45 CAT5E Fêmea</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li><span style="line-height: 1.4;">1UN - R$ 6,60</span></li><li><br></li></ol>            
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="http://www.dhcp.com.br/media/catalog/product/cache/1/image/473x/9df78eab33525d08d6e5fb8d27136e95/2/0/20-x-conector-rj45-cat6-com-insert_mlb-o-204531299_8502.jpg.jpg" alt="img">
+                    </div>
+                    <h3>Conector RJ45 CAT6 Macho</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li>100UN - R$ 88,10</li></ol>           
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_post wow fadeInUp">
+                    <div class="blog_img">
+                      <img src="http://d1fzrfeqgmqjkr.cloudfront.net/assets/50467/produtos/124/thumb_400-400-53841.jpg" alt="img">
+                    </div>
+                    <h3>Conector RJ45 CAT6 Fêmea</h3>
+                    <ol class="lead list-unstyled"><li><br></li><li>1UN - R$ 7,40</li></ol>           
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END BLOG SECTION ================-->
+
+     <!--=========== BEGAIN FOOTER ================-->
+     <footer id="footer">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-6">
+             <div class="footer_left">
+				<!--=========== Designed By WpFreeware Team ================-->
+               <!-- <p>Copyright &copy; 2015 <a href="http://www.wpfreeware.com">WpFreeware</a>. All Rights Reserved</p> -->
+			   <!--=========== Designed By WpFreeware Team ================-->
+             </div>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-6">
+             <div class="footer_right">
+               <ul class="social_nav">
+               <!--   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+      </footer>
+      <!--=========== END FOOTER ================-->
+
+     <!-- Javascript Files
+     ================================================== -->
   
-<!--///////////////////////////////////////////////////////
-       // Who We Are Section
-       //////////////////////////////////////////////////////////-->
+     <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Google map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery.ui.map.js"></script>
+     <!-- For smooth animatin  -->
+    <script src="js/wow.min.js"></script> 
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- superslides slider -->
+    <script src="js/jquery.superslides.min.js" type="text/javascript"></script>
+    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>    
+    <!-- for circle counter -->
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    <!-- for portfolio filter gallery -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/elastic_grid.min.js"></script>
+    <script src="js/portfolio_slider.js"></script>
 
-
-  <div class="exp service-parlex">
-    <div class="exp-back">
-      <div class="w-container">
-        <div id="who-v-animation">
-        <div class="wrap">
-          <div class="w-row exp-des">
-            <div class="w-col w-col-6 exp-col1">
-              <div class="col1-div">
-                <div class="experinc-box">
-                <h3 class="experinc-box-h3">Who We Are</h3>
-                <p>At Elegance, we have highly skilled and professional team of dedicated web professionals to take care of your projects. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="buttons">
-                <div class="btn-ex-one">
-                  <a class="ex-btn" href="#">Read More</a>
-                </div>
-                <div class="btn-ex-two">
-                  <a class="ex-btn-two" href="#">Buy Now!</a>
-                </div>
-              </div>
-              </div>
-              </div>
-            </div>
-            <div class="w-col w-col-6 exp-col2">
-              <div class="col2-div">
-                <img src="images/who-we-are.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
-
-<!--///////////////////////////////////////////////////////
-       // End Who We Are section 
-       //////////////////////////////////////////////////////////-->
-
-
-
-<!--///////////////////////////////////////////////////////
-       // Call to action section 
-       //////////////////////////////////////////////////////////--> 
-
-
-  <div class="call-to-action">
-    <div class="call-to-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="w-row call-row">
-            <div class="w-col w-col-9 cal-col-1">
-              <h3 class="call-to-h3">Elegance | Responsive Onepage HTML Tempalte</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p>
-            </div>
-            <div class="w-col w-col-3"><a class="call-to-butn" href="#">Buy Now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!--///////////////////////////////////////////////////////
-       // End call to action section 
-       //////////////////////////////////////////////////////////-->
-
-
-<!--///////////////////////////////////////////////////////
-       // Service section 
-       //////////////////////////////////////////////////////////-->
-
-
-  <section class="service-parlex" id="service">
-    <section class="parlex-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="service-combo">
-            <div class="services">
-              <h1 class="service-heading">SERVICES</h1>
-              <div class="services-text">WHAT WE DO?</div>
-              <div class="sepreater service"></div>
-            </div>
-            <div class="services-text">“ THE BEST RESULTS ARE OBTAINED BY TASKING THE RIGHT PEOPLE TO THE RIGHT PROJECT ”
-              <br>We understand that everybody has their unique strengths and we put that knowledge to use by assembling the most efficient team possible for your project. You know your business better than anyone. Your insights, combined with our skills
-              and creativity, will result in branding and marketing that truly stand out. We’re ready to get started.</div>
-            <div class="w-row">
-              <div class="w-col w-col-3 services-column">
-                <div class="service-icon">
-                  <img src="images/services/Web-Design-Development.png">
-                </div>
-                <h4 class="service-head">WEB DESIGN &amp; DEVELOPMENT</h4>
-              </div>
-              <div class="w-col w-col-3">
-                <div class="service-icon">
-                  <img src="images/services/Branding-Identity.png">
-                </div>
-                <h4 class="service-head">Branding/Positioning &amp; IDENTITY</h4>
-              </div>
-              <div class="w-col w-col-3">
-                                <div class="service-icon">
-                  <img src="images/services/Motion-Video.png">
-                </div>
-                <h4 class="service-head">Marketing Communications</h4>
-              </div>
-              <div class="w-col w-col-3">
-                <div class="service-icon">
-                  <img src="images/services/UX-UI.png">
-                </div>
-                <h4 class="service-head">UI/UX Design<br>Mobile Design</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
-<!--///////////////////////////////////////////////////////
-       // End Service section 
-       //////////////////////////////////////////////////////////-->
-
-
-<!--///////////////////////////////////////////////////////
-       // Process section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="process-parlex">
-    <div class="parlex2-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="process">
-            <h1 class="our-process-heading">OUR PROCESS</h1>
-            <div class="sepreater"></div>
-          </div>
-          <div class="process-text">
-            <div class="process-text">Our process is straight forward, simple, &amp; successful.</div>
-            <div class="w-row">
-              <div class="w-col w-col-3">
-                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-                   <a href="#set-1" class="hi-icon hi-icon-locked">Security</a>
-                </div>
-                <h4 class="our-process-sys">BRAINSTORM</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-              </div>
-              <div class="w-col w-col-3">
-                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-          <a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>
-        </div>
-                <h4 class="our-process-sys">PLAN</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-              </div>
-              <div class="w-col w-col-3">
-                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-          <a href="#set-1" class="hi-icon hi-icon-screen">Desktop</a>
-        </div>
-                <h4 class="our-process-sys">DESIGN</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-              </div>
-              <div class="w-col w-col-3">
-                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-          <a href="#set-1" class="hi-icon hi-icon-earth">Partners</a>
-        </div>
-                <h4 class="our-process-sys">DEVELOP</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Process section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Porfolio section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="portfolio-parlex" id="portfolio">
-    <div class="parlex3-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="portfolio">
-            <h1 class="portfolio-heading">PORTFOLIO</h1>
-            <div class="portfolio-text">OUR WORK</div>
-            <div class="sepreater"></div>
-          </div>
-          <p class="porfolio-paragraph">THE BEST RESULTS ARE OBTAINED BY TASKING THE RIGHT PEOPLE TO THE RIGHT PROJECT
-            <br>We do what we love. Our clients love what we do.</p>
-            <div class="container demo-1">
-      <ul class="grid cs-style-1">
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/1.jpg" alt="img01">
-            <figcaption>
-              <h3>Camera</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/2.jpg" alt="img02">
-            <figcaption>
-              <h3>Music</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/4.jpg" alt="img04">
-            <figcaption>
-              <h3>Settings</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/5.jpg" alt="img05">
-            <figcaption>
-              <h3>Safari</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/3.jpg" alt="img03">
-            <figcaption>
-              <h3>Phone</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/6.jpg" alt="img06">
-            <figcaption>
-              <h3>Game Center</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/7.jpg" alt="img06">
-            <figcaption>
-              <h3>Game Center</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/8.jpg" alt="img06">
-            <figcaption>
-              <h3>Game Center</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img class="portfolio-images" src="images/portfolio/9.jpg" alt="img06">
-            <figcaption>
-              <h3>Game Center</h3>
-              <span>Jacob Cummings</span>
-              <a href="#">Take a look</a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div><!-- /container -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Porfolio section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Our-plan section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="our-plan-parlex">
-    <div class="parlex4-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="our-plans">
-            <h1 class="ourplan-heading">OUR PLANS</h1>
-            <div class="our-plan-text">SELECT YOUR BEST PLAN</div>
-          </div>
-          <div class="sepreater"></div>
-          <p class="our-plan-paragraph">As a creative studio we believe no client is too big nor too small to work with us. We love what we do. And that shows.
-            <br>We like to create things with fun, like-minded people.</p>
-          <div class="w-row">
-            <div class="w-col w-col-3">
-              <div class="plan1">
-                <div class="plan1-ser1">
-                  <h4>PERSONAL SITE</h4>
-                  <div class="price">$15 / Month</div>
-                </div>
-                <p class="plan1-ser1-para">
-                  <br>Unlimited&nbsp;Email-Addresses
-                  <br>
-                  <br>50GB&nbsp;Disk&nbsp;Space
-                  <br>
-                  <br>Unlimited&nbsp;MySQL-Databases
-                  <br>
-                  <br>Unlimited&nbsp;Domains
-                  <br>
-                  <br>Free&nbsp;Billing Systems</p><a class="plan-1-butn" href="#">Sign Up!</a>
-              </div>
-            </div>
-            <div class="w-col w-col-3">
-              <div class="plan1 plan2">
-                <div class="plan2-ser2">
-                  <h4>SMALL BUSINESS</h4>
-                  <div class="price">$25 / Month</div>
-                </div>
-                <p class="plan1-ser1-para">
-                  <br>Unlimited&nbsp;Email-Addresses
-                  <br>
-                  <br>80GB&nbsp;Disk&nbsp;Space
-                  <br>
-                  <br>Unlimited&nbsp;MySQL-Databases
-                  <br>
-                  <br>Unlimited&nbsp;Domains
-                  <br>
-                  <br>Free&nbsp;Billing Systems</p><a class="plan-1-butn2 plan-1-butn" href="#">Sign Up!</a>
-              </div>
-            </div>
-            <div class="w-col w-col-3">
-              <div class="plan1 plan3">
-                <div class="plan1-ser1 plan3-ser3">
-                  <h4>CORPORATE SITE</h4>
-                  <div class="price">$50 / Month</div>
-                </div>
-                <p class="plan1-ser1-para">
-                  <br>Unlimited&nbsp;Email-Addresses
-                  <br>
-                  <br>120GB&nbsp;Disk&nbsp;Space
-                  <br>
-                  <br>Unlimited&nbsp;MySQL-Databases
-                  <br>
-                  <br>Unlimited&nbsp;Domains
-                  <br>
-                  <br>Free&nbsp;Billing Systems</p><a class="plan-1-butn plan-1-butn3" href="#">Sign Up!</a>
-              </div>
-            </div>
-            <div class="w-col w-col-3">
-              <div class="plan1 plan4">
-                <div class="plan1-ser1 plan4-ser4">
-                  <h4>E-COMMERCE SITE</h4>
-                  <div class="price">$90&nbsp;/ Month</div>
-                </div>
-                <p class="plan1-ser1-para">
-                  <br>Unlimited&nbsp;Email-Addresses
-                  <br>
-                  <br>120GB&nbsp;Disk&nbsp;Space
-                  <br>
-                  <br>Unlimited&nbsp;MySQL-Databases
-                  <br>
-                  <br>Unlimited&nbsp;Domains
-                  <br>
-                  <br>Free&nbsp;Billing Systems</p><a class="plan-1-butn plan-4-butn4" href="#">Sign Up!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Our-Plan section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Team section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="team-parlex" id="team">
-    <div class="parlex5-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="team">
-            <h1 class="team">TEAM</h1>
-            <div class="sepreater team-sep"></div>
-          </div>
-          <div class="team-text">
-            <p class="team-text-para">We are Elegance. We offer creative solutions for every web-based project you can think of.&nbsp;
-              <br>We take pride in our work and everything we create is executed with precision and love.</p>
-          </div>
-          <div class="w-row team-member">
-            <div class="w-col w-col-4">
-              <div class="team-section">
-                <div class="team-image">
-                  <img class="team-img" src="images/team/image1.png" alt="52dd1e57e64ce6cb200004f3_image1.png">
-                </div>
-                <div class="team-des">
-                  <h4 class="team-name">JANE ANISTON</h4>
-                  <div class="team-name-des">Creative Director</div>
-                </div>
-                <div class="team-social">
-                  <div class="w-clearfix social-section">
-                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
-                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
-                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
-                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
-                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-col w-col-4">
-              <div class="team-section">
-                <div class="team-image">
-                  <img class="team-img" src="images/team/image2.png" alt="52dd1edfe64ce6cb200004fb_image2.png">
-                </div>
-                <div class="team-des">
-                  <h4 class="team-name">JOHN DOE</h4>
-                  <div class="team-name-des">Lead Developer</div>
-                </div>
-                <div class="team-social">
-                  <div class="w-clearfix social-section">
-                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
-                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
-                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
-                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
-                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-col w-col-4">
-              <div class="team-section">
-                <div class="team-image">
-                  <img class="team-img" src="images/team/image3.png" alt="52dd1efcad165eca20000539_image3.png">
-                </div>
-                <div class="team-des">
-                  <h4 class="team-name">TANE NISTON</h4>
-                  <div class="team-name-des">Graphic Designer</div>
-                </div>
-                <div class="team-social">
-                  <div class="w-clearfix social-section">
-                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
-                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
-                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
-                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
-                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Team section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Clients section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="clients-parlex">
-    <div class="parlex6-back">
-      <div class="w-container">
-        <div class="wrap-client">
-          <div class="clients-sub">
-            <div id="clients">
-        <div class="clients-wrap">
-          <ul id="clients-list" class="clearfix">
-            <li><img src="images/clients/client-logo1.png" alt="logo"></li>
-            <li><img src="images/clients/client-logo2.png" alt="logo"></li>
-            <li><img src="images/clients/client-logo3.png" alt="logo"></li>
-            <li><img src="images/clients/client-logo4.png" alt="logo"></li>
-            <li><img src="images/clients/client-logo5.png" alt="logo"></li>
-            <li><img src="images/clients/client-logo6.png" alt="logo"></li>
-          </ul>
-        </div><!-- @end .clients-wrap -->
-      </div><!-- @end #clients -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Clients section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Contact section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="contact-parlex" id="contact">
-    <div class="parlex8-back">
-      <div class="w-container">
-        <div class="wrap">
-          <div class="contact-div">
-            <h1 class="contact-heading">CONTACT</h1>
-            <div class="sepreater"></div>
-          </div>
-          <p class="contact-para">Thanks for taking the time to contact us!
-            <br>We do our best to respond to quickly, it could take us 1-2 business days to get back to you. Feel free to say hello!</p>
-          <div class="w-form">
-            <form action="contact.php" method="post">
-            <label for="name">Name:</label>
-             <input class="w-input" type="text" placeholder="Enter your name" name="cf_name">
-           <label for="email">Email Address:</label>
-             <input class="w-input" placeholder="Enter your email address" type="text" name="cf_email" required="required">
-           <label for="email">Your Message:</label>
-             <textarea class="w-input message" placeholder="Enter your Message Here" name="cf_message"></textarea><br>
-           <input class="w-button" type="submit" value="Send">
-         </form>
-          <div class="w-form-done">
-              <p>Thank you! Your submission has been received!</p>
-            </div>
-            <div class="w-form-fail">
-              <p>Oops! Something went wrong while submitting the form :(</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-widget w-widget-map contac-map" data-widget-latlng="37.782163,-122.400591" data-widget-style="roadmap" data-widget-zoom="10" data-widget-tooltip="Carino Headquater"></div>
-      <div class="w-container">
-        <div class="w-row contact-col">
-          <div class="w-col w-col-4 contact-col1">
-            <div>
-                      <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-                       <a href="#set-5" class="hi-icon hi-icon-earth">Partners</a>
-                    </div>
-              <h4 class="contact-col-head">Visit Us</h4>
-            </div>
-            <div>
-              <div class="contact-col-text">795 Folsom St., Suite 600
-                <br>San Francisco, CA 94107</div>
-            </div>
-          </div>
-          <div class="w-col w-col-4 contact-col2">
-            <div>
-               <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-                       <a href="#set-5" class="hi-icon hi-icon-mail">Partners</a>
-                    </div>
-              <h4 class="contact-col-head">Mail us</h4>
-            </div>
-            <div>
-              <div class="contact-col-text">general: office@elegance.com
-                <br>support: support@elegance.com</div>
-            </div>
-          </div>
-          <div class="w-col w-col-4 contact-col3">
-            <div>
-              <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
-                       <a href="#set-5" class="hi-icon hi-icon-mobile">Partners</a>
-                    </div>
-              <h4 class="contact-col-head">Call Us</h4>
-            </div>
-            <div>
-              <div class="contact-col-text-bar-last">P: (452) 123-8970
-                <br>F: (452) 123-8971</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--///////////////////////////////////////////////////////
-       // End Contact section 
-       //////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////
-       // Footer section 
-       //////////////////////////////////////////////////////////-->  
-
-  <div class="footer-parlex">
-    <div class="parlex9-back">
-      <div class="w-container">
-        <div class="wrap">
-          <img class="footer-logo" src="images/footer-logo.png" alt="Elegance">
-          <div class="footer-social">
-            <div class="fotter-social-wrap">
-              <a href="https://www.facebook.com/"><img class="fotter-social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
-              <a href="https://www.twitter.com/"><img class="fotter-social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
-              <a href="https://plus.google.com/"><img class="fotter-social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
-              <a href="https://www.blogger.com/"><img class="fotter-social" src="images/social/Blogger.png" alt="52de52e7b6d2171f78000414_Blogger.png"></a>
-              <a href="https://www.digg.com/"><img class="fotter-social" src="images/social/Digg.png" alt="52de53174702a71e780003c3_Digg.png"></a>
-              <a href="https://www.pinterest.com/"><img class="fotter-social" src="images/social/Pinterest.png" alt="52de533c5d3566c1430003e9_Pinterest.png"></a>
-              <a href="https://www.flicker.com/"><img class="fotter-social" src="images/social/Flickr.png" alt="52de535f1b42bfc24300049e_Flickr.png"></a>
-              <a href="https://www.vimeo.com/"><img class="fotter-social" src="images/social/Vimeo.png" alt="52de537cb6d2171f7800041c_Vimeo.png"></a>
-              <a href="https://www.myspace.com/"><img class="fotter-social" src="images/social/Myspace.png" alt="52de53954702a71e780003c5_Myspace.png"></a>
-              <a href="https://www.stumbleupon.com/"><img class="fotter-social" src="images/social/Stumbleupn.png" alt="52de53c0b6d2171f7800041e_Stumbleupn.png"></a>
-              <a href="https://www.tumblr.com/"><img class="fotter-social" src="images/social/Tumblr.png" alt="52de54021b42bfc2430004a3_Tumblr.png"></a>
-              <a href="https://www.youtube.com/"><img class="fotter-social" src="images/social/Youtube.png" alt="52de54495d3566c14300040a_Youtube.png"></a>
-            </div>
-          </div>
-          <div>
-            <div class="fotter-text"><p class="fotter-quote">“ THE LIGHT WITHIN US BOWS TO THE LIGHT WITHIN YOU. ”</p>
-              <p class="copyright-area">©2014 ELEGANCE. ALL RIGHTS RESERVED,TEMPLATE BY&nbsp;<a href="https://carinotech.com" title="Carino Technologies" target="_blank">CARINO TECHNOLOGIES</a></p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-       <!--///////////////////////////////////////////////////////
-       // End Footer section 
-       //////////////////////////////////////////////////////////-->
-
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/normal.js"></script>
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/carousels.js"></script>
-  <script type="text/javascript" src="js/slider-modernizr.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/portfolio-effects.js"></script>
-  <script src="js/toucheffects.js"></script>
-  <script src="js/modernizr.js"></script>
-  <script src="js/animation.js"></script>
-
-</body>
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+  </body>
 </html>
