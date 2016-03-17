@@ -381,7 +381,7 @@ img{
   display: inline;
   float: left;
   width: 100%;
-  padding: 80px 0px;
+ /* padding: 80px 0px;*/
 }
 .about_area{
 	float: left;
