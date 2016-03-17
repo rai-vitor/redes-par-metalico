@@ -563,11 +563,11 @@ div[data-dimension] {
 .service_icon { 
   border-radius: 100%;
   color: #fff;
-  font-size: 72px;
-  height: 150px;
-  line-height: 120px;
+  font-size: 60px;
+  height: 75px;
+  line-height: 50px;
   padding: 15px 0;
-  width: 150px; 
+  width: 75px; 
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
